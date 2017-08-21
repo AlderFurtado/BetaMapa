@@ -33,7 +33,10 @@ public class MapsActivity extends SupportMapFragment implements OnMapReadyCallba
      * it inside the SupportMapFragment. This method will only be triggered once the user has
      * installed Google Play services and returned to the app.
      */
+
     @Override
+
+
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
@@ -42,11 +45,13 @@ public class MapsActivity extends SupportMapFragment implements OnMapReadyCallba
         mMap.getUiSettings().setZoomControlsEnabled(true);
 
         // Add a marker in Sydney city and move the camera
-        LatLng sydney = new LatLng(-33.87365, 151.20689);
+        LatLng sydney = new LatLng(-1.4164848299996655, -48.47942691296339);
         MarkerOptions markerOptions = new MarkerOptions() ;
         markerOptions.position(sydney);
         markerOptions.title("Marker in Sidney");
         mMap.addMarker(markerOptions);
+
+
 
         // mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
