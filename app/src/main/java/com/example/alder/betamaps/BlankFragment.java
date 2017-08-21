@@ -24,7 +24,7 @@ public class BlankFragment extends SupportMapFragment implements OnMapReadyCallb
     private Marker marker = null;
 
     private boolean mapaMarcado = false;
-    private LocationManager locationManager;
+    private LocationManager locationManager ;
 
 
     @Override
